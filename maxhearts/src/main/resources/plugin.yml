@@ -1,0 +1,35 @@
+name: maxHearts
+main: com.maxhearts.MaxHeartsPlugin
+version: 1.0.0
+api-version: '1.21'
+
+commands:
+  maxhearts:
+    description: Manage player max hearts (set/give/take/donate/transfer/get)
+    usage: |
+      /maxhearts set <player> <hearts>
+      /maxhearts give <player> <amount>
+      /maxhearts take <player> <amount>
+      /maxhearts donate <player> <amount>
+      /maxhearts transfer <from> <to> <amount>
+      /maxhearts get <player>
+    aliases: [mh]
+    permission: maxhearts.use
+  sethearts:
+    description: Set a player's hearts (legacy alias)
+    usage: /sethearts <player> <hearts>
+    permission: maxhearts.set
+
+permissions:
+  maxhearts.use:
+    default: op
+  maxhearts.set:
+    default: op
+  maxhearts.give:
+    default: op
+  maxhearts.take:
+    default: op
+  maxhearts.donate:
+    default: true
+  maxhearts.transfer:
+    default: op

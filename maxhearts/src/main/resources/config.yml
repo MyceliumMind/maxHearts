@@ -1,0 +1,7 @@
+# Default hearts for anyone without an override (5 = 10 health points)
+defaultHearts: 5
+
+# Optional per-player overrides (by exact player name or UUID string)
+overrides:
+  # MyceliumMind: 6
+
