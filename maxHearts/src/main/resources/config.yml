@@ -1,0 +1,11 @@
+# Default hearts for anyone without stored data (5 = 10 health points)
+defaultHearts: 5
+
+# Bounds (inclusive) for clamping
+minHearts: 1
+maxHearts: 100
+
+# Note: v1.1 stores per-player data in data.yml (UUID-based).
+# If an older config has an `overrides:` section, v1.1 will migrate
+# those entries automatically on startup/first join, then remove them.
+

@@ -35,7 +35,7 @@ public class MaxHeartsTabCompleter implements TabCompleter {
                     .filter(n -> n.toLowerCase().startsWith(start))
                     .collect(Collectors.toList());
         }
-        // No numeric suggestions
-        return List.of();
+        return List.of(); // no numeric suggestions
     }
 }
+
